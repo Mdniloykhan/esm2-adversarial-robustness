@@ -1,0 +1,4 @@
+defense,mean_time_s,std_time_s,overhead_x
+Baseline,0.56,0.081,1.0
+Bayesian (10 passes),5.311,0.486,9.5
+Ensemble (3 models),1.549,0.154,2.8
