@@ -80,6 +80,26 @@ Results are mean ± std over 5 independent trials across 8 protein sequences.
 
 ---
 
+## Runtime Measurements
+
+Inference time for defense mechanisms measured on a single 76 AA 
+sequence (Ubiquitin) on NVIDIA T4 GPU, averaged over 10 trials.
+
+| Defense | Time (s) | Overhead | Note |
+|---------|----------|----------|------|
+| Baseline inference | 0.560 ± 0.081 | 1.0× | Single forward pass |
+| Bayesian estimation | 5.311 ± 0.486 | 9.5× | 10 dropout passes |
+| Ensemble (3 models) | 1.549 ± 0.154 | 2.8× | 3 independent runs |
+
+**Key finding:** Bayesian uncertainty estimation imposes the highest 
+overhead (9.5× baseline) due to repeated dropout forward passes. 
+Ensemble inference with 3 models is more practically deployable 
+at 2.8× overhead.
+
+The runtime experiment code is included in Step 11 of the notebook.
+Additional data saved in `esm2_runtime_results.csv`.
+
+
 ## How to Reproduce
 
 1. Open `esm2_adversarial_experiments.ipynb` in [Google Colab](https://colab.research.google.com)
