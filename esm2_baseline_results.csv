@@ -1,0 +1,9 @@
+sequence_name,sequence_length,condition,mutation_rate,perplexity,perplexity_shift
+Ubiquitin_P0CG48,76,clean,0.0,10.1279,0.0
+HP35_Villin,35,clean,0.0,13.6368,0.0
+Trp_cage,20,clean,0.0,17.5759,0.0
+GB1_fragment,56,clean,0.0,7.5989,0.0
+Chignolin,10,clean,0.0,12.3457,0.0
+WW_domain,34,clean,0.0,6.7007,0.0
+Lysozyme_fragment,53,clean,0.0,21.2112,0.0
+Barnase_fragment,39,clean,0.0,16.0714,0.0
